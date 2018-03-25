@@ -1,0 +1,28 @@
+{
+  "name": "tech50.co.uk",
+  "version": "1.0.0",
+  "description": "tech50 website",
+  "main": "index.js",
+  "author": "swissarmykirpan <gurpreet@gurpreetsohal.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "webpack-dev-server --progress --inline"
+  },
+  "dependencies": {
+    "@types/react": "^16.0.41",
+    "@types/react-dom": "^16.0.4",
+    "global": "^4.3.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "save": "^2.3.2"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^4.0.1",
+    "source-map-loader": "^0.2.3",
+    "ts-loader": "^4.1.0",
+    "typescript": "^2.7.2",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  }
+}

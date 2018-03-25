@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": false,
+    "inlineSourceMap": true,
+    "inlineSources": false,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "removeComments": false,
+    "lib": ["es6", "dom"]
+  },
+  "include": ["./src/**/*"],
+  "plugins": [
+    {
+      "name": "tslint-language-service",
+      "alwaysShowRuleFailuresAsWarnings": false
+    }
+  ]
+}
