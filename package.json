@@ -6,23 +6,32 @@
   "author": "swissarmykirpan <gurpreet@gurpreetsohal.com>",
   "license": "MIT",
   "scripts": {
+    "dev":
+      "TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack-dev-server --config webpack.dev.ts --open",
+    "build":
+      "TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --config webpack.dev.ts",
     "start:dev": "webpack-dev-server --progress --inline"
   },
   "dependencies": {
+    "@types/node": "^9.6.0",
     "@types/react": "^16.0.41",
     "@types/react-dom": "^16.0.4",
+    "@types/webpack": "^4.1.3",
     "global": "^4.3.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "save": "^2.3.2"
+    "typescript": "^2.8.1"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^4.0.1",
+    "clean-webpack-plugin": "^0.1.19",
     "source-map-loader": "^0.2.3",
     "ts-loader": "^4.1.0",
-    "typescript": "^2.7.2",
+    "ts-node": "^5.0.1",
+    "tsconfig-paths": "^3.1.3",
     "webpack": "^4.2.0",
     "webpack-cli": "^2.0.13",
-    "webpack-dev-server": "^3.1.1"
+    "webpack-dev-server": "^3.1.1",
+    "webpack-merge": "^4.1.2"
   }
 }

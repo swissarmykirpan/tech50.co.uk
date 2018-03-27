@@ -1,17 +1,18 @@
-const path = require("path");
-module.exports = {
+import CleanWebpackPlugin from "clean-webpack-plugin";
+import { Configuration } from "webpack";
+import path from "path";
+
+const config: Configuration = {
   entry: {
     app: path.join(__dirname, "./src/index.tsx"),
     vendors: ["react", "react-dom"]
   },
-  mode: "development",
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "./build"),
-    publicPath: "",
+    publicPath: "/",
     chunkFilename: "[name].js"
   },
-  devtool: "inline-source-map",
   optimization: {
     runtimeChunk: {
       name: "manifest"
@@ -22,7 +23,7 @@ module.exports = {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: "vendors",
-          //priority: -20,
+          priority: -20,
           chunks: "all"
         }
       }
@@ -38,5 +39,8 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".js", ".ts"]
-  }
+  },
+  plugins: [new CleanWebpackPlugin(["build"])]
 };
+
+export default config;
