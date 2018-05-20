@@ -1,4 +1,5 @@
-import CleanWebpackPlugin from "clean-webpack-plugin";
+// import CleanWebpackPlugin from "clean-webpack-plugin";
+import HtmlWebpackPlugin from "html-webpack-plugin";
 import { Configuration } from "webpack";
 import path from "path";
 
@@ -40,7 +41,14 @@ const config: Configuration = {
   resolve: {
     extensions: [".tsx", ".js", ".ts"]
   },
-  plugins: [new CleanWebpackPlugin(["build"])]
+  plugins: [
+    //new CleanWebpackPlugin(["build"])
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      filename: "index.html"
+      
+    })
+  ]
 };
 
 export default config;
