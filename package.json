@@ -16,7 +16,7 @@
     "@types/react-dom": "^16.0.4",
     "global": "^4.3.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react-dom": "^16.2.1",
     "typescript": "^2.8.1"
   },
   "devDependencies": {
