@@ -1,5 +1,8 @@
 export default class Test {
-  get name(): String {
+  get firstName(): String {
     return "Gurpreet";
+  }
+  get lastName(): String {
+    return "Sohal!";
   }
 }
