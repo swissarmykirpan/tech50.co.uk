@@ -3,6 +3,6 @@ export default class Test {
     return "Gurpreet";
   }
   get lastName(): String {
-    return "Sohal!";
+    return "Sohal";
   }
 }
